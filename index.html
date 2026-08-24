@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAB Command Center - Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #fdfbf7; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    <div class="max-w-4xl mx-auto">
+        <header class="mb-8">
+            <h1 class="text-4xl font-extrabold text-slate-800">OAB COMMAND CENTER</h1>
+            <p class="text-slate-500 mt-1">Sua jornada rumo à aprovação | <span class="font-bold text-slate-800">DIA 31/90</span></p>
+        </header>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <p class="text-slate-500 text-sm">Progresso Geral</p>
+                <p class="text-3xl font-bold text-slate-800">34%</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <p class="text-slate-500 text-sm">Questões Resolvidas</p>
+                <p class="text-3xl font-bold text-slate-800">412</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <p class="text-slate-500 text-sm">Próxima Prioridade</p>
+                <p class="text-lg font-bold text-red-600 truncate">Processo Civil</p>
+            </div>
+        </div>
+
+        <!-- Missão de Hoje -->
+        <section class="bg-white p-6 rounded-2xl border-l-8 border-red-500 shadow-lg">
+            <h2 class="text-2xl font-bold text-slate-800 mb-6 flex items-center">
+                🎯 MISSÃO DE HOJE
+            </h2>
+            
+            <div class="space-y-6">
+                <!-- Task 1 -->
+                <div class="flex items-start">
+                    <input type="checkbox" class="mt-1.5 h-5 w-5 rounded border-gray-300 text-red-600 focus:ring-red-500">
+                    <div class="ml-4">
+                        <p class="font-bold text-lg text-slate-800">Processo Civil — Tutela Provisória</p>
+                        <p class="text-slate-600 text-sm">Aula + mapa mental + 25 questões | Meta: ≥70%</p>
+                    </div>
+                </div>
+
+                <!-- Task 2 -->
+                <div class="flex items-start">
+                    <input type="checkbox" class="mt-1.5 h-5 w-5 rounded border-gray-300 text-amber-500 focus:ring-amber-400">
+                    <div class="ml-4">
+                        <p class="font-bold text-lg text-slate-800">Ética — Revisão</p>
+                        <p class="text-slate-600 text-sm">Revisão + 15 questões</p>
+                    </div>
+                </div>
+
+                <!-- Task 3 -->
+                <div class="flex items-start">
+                    <input type="checkbox" class="mt-1.5 h-5 w-5 rounded border-gray-300 text-green-600 focus:ring-green-500">
+                    <div class="ml-4">
+                        <p class="font-bold text-lg text-slate-800">Penal — Teoria do crime</p>
+                        <p class="text-slate-600 text-sm">20 questões</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mt-8 w-full bg-slate-900 text-white font-bold py-4 rounded-xl hover:bg-slate-800 transition">
+                COMEÇAR SESSÃO
+            </button>
+        </section>
+    </div>
+</body>
+</html>
